@@ -21,15 +21,25 @@ Y para finalizar el programa se puede hacer de dos formas:
 * [Adaptador DB9-USB](https://www.amazon.es/Sabrent-DB-9-RS-232-Cable-convertidor-Prolific-CB-DB9P/dp/B00IDSM6BW/ref=pd_lpo_1?pd_rd_w=VrX5z&content-id=amzn1.sym.d229992b-4342-448b-b0e5-b51a45434c54&pf_rd_p=d229992b-4342-448b-b0e5-b51a45434c54&pf_rd_r=VTJP38HP9F0CTJ8TG04V&pd_rd_wg=Sj2ab&pd_rd_r=47375c3d-7e9b-46b8-b3b3-ccd0eff427cf&pd_rd_i=B00IDSM6BW&psc=1) - Adaptador que sirve para conectar un ordenador a otro dispositivo, actualmente se utiliza este adaptador ya que los ordenadores de fabrica no lo traen incorporado como antiguamente.
 
 ### Software
-
+* [ IDE Arduino](https://www.arduino.cc/) - Entorno de Desarrollo para las PCBs de Arduino
+* [ Labview ](https://www.ni.com/es-es/shop/labview.html) - LabVIEW es un entorno de programación gráfica que los ingenieros utilizan para desarrollar sistemas pruebas automatizadas de investigación, validación y producción.
 
 ## Schematic ⚙️
 
+![image](https://user-images.githubusercontent.com/111312600/199588367-a4afcba6-2c06-49a2-8916-82fc82bbd1d5.png)
 
 
 ## Potential problems📦
 
-
+### El puente de Wheatstone hay aveces que no me da diferencia entre cada lado o la diferencia es 5v
+    El puente está mal construido o la PT100 no hace buena conexión.
+### Varía mucho lo que me muestra el Arduino y/o Labview
+    Sucede cuando nos hemos puesto que el Arduino tenga la referencia interna de 1,1V en las entradas analógicas,
+    debido a que la referencia por defecto es 5V y con esta referencia no se puede ver una diferencia de milivoltios. 
+### El programa no se para a los 5 minutos o cuando le doy al botón de STOP.
+    Si no se introduce el contador de tiempo y el control del botón en un bucle el programa solo lee sus estados 
+    al inicio del programa 
+    
 ## Author ✒️
 
 
